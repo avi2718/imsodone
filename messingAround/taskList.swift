@@ -67,7 +67,7 @@ struct TaskList {
             let hours = Int(task.minChunk) / 3600
             let timeString = "\(hours) hrs \(minutes) min"
             
-            let nameString = "\(taskIndex)) \(task.name)"
+            let nameString = "\(task.name)"
             currentLength += task.length
             taskIndex += 1
             

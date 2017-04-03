@@ -24,10 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabBarController = window!.rootViewController as! UITabBarController
         let destinationViewController = tabBarController.viewControllers?[3] as! taskListViewController // or whatever tab index you're trying to access
-        let task = Task(name: "i'm a task", dueDate: Date(timeIntervalSinceNow: TimeInterval(4000)), category: "Work", length: TimeInterval(300), minChunk: TimeInterval(30))
         destinationViewController.taskList = TaskList(time: TimeInterval(3000))
-        print("the First One")
-        print(Task.allTasks)
         return true
     }
 
