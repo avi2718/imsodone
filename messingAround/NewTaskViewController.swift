@@ -102,9 +102,8 @@ class NewTaskViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func newTaskAction(_ sender: UIButton) {
         let _ = self.navigationController?.popViewController(animated: true)
-        let myTask = Task(name: nameField.text!, dueDate: dueDate, category: category, length: taskLength, minChunk: minChunk)
+        let _ = Task(name: nameField.text!, dueDate: dueDate, category: category, length: taskLength, minChunk: minChunk)
         //print(myTask.name)
-        Task.allTasks.append(myTask)
         //axis.tasks.append(myTask)
         /*for task in Task.allTasks {
             print(task.name)

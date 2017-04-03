@@ -26,6 +26,7 @@ struct Task: CustomStringConvertible{ //, Hashable {
         self.category = category
         self.length = length
         self.minChunk = minChunk
+        Task.allTasks.append(self)
      }
     
     /*var hashValue: Int {

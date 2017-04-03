@@ -18,15 +18,19 @@ class taskListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Task.allTasks.count
+        
+        return taskList.allTasks.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+        UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
         
         let taskName = Array(taskList.selectedTasks.keys)[indexPath.row]
         let taskLength = taskList.selectedTasks[taskName]
-        
+            print("the 2nd One")
+        print(taskList.allTasks)
+        print(Task.allTasks)
         cell.textLabel?.text = taskName
         cell.detailTextLabel?.text = taskLength
         
